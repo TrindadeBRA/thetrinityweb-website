@@ -143,26 +143,3 @@ if (typeof cssVars !== 'undefined') {
 		onlyVars: true,
 	});
 }
-
-$(document).ready(function(){
-    $('.customer-logos').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2200,
-    arrows: true,
-    dots: false,
-    pauseOnHover: true,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 3
-      }
-    }, {
-      breakpoint: 520,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
-    });
-  });

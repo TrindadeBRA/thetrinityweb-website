@@ -1,7 +1,7 @@
 /***********************************************
  * WIDGET: ANIMATED BLOCK
  ***********************************************/
- (function ($) {
+(function ($) {
 
 	'use strict';
 
@@ -215,7 +215,6 @@
 /***********************************************
  * PAGE: FULLPAGE SLIDER
  ***********************************************/
-
 (function ($) {
 
 	'use strict';
@@ -280,7 +279,7 @@
 				var section = el.find('.vlt-section.active'),
 					index = section.index();
 				if (index == 0) {
-					numbers.html('<a aria-label="contador" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></a>');
+					numbers.html('<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></a>');
 				} else {
 					numbers.html(VLTJS.addLedingZero(index + 1));
 				}
@@ -616,12 +615,6 @@
 			}
 			var el = $('.vlt-project-showcase-slider .swiper-container');
 			new Swiper(el, {
-				loop: true,
-				autoplay: {
-					delay: 2200,
-				  },
-				disableOnInteraction: true,
-				pauseOnMouseEnter: true,
 				speed: 1000,
 				spaceBetween: 30,
 				grabCursor: true,
@@ -663,9 +656,9 @@
 
 			item.eq(0).trigger('mouseenter');
 
-			// VLTJS.window.on('mousemove', function (e) {
-			// 	value = e.pageX - el.offset().left;
-			// });
+			VLTJS.window.on('mousemove', function (e) {
+				value = e.pageX - el.offset().left;
+			});
 
 			gsap.ticker.add(function () {
 				gsap.set(items, {
@@ -704,12 +697,6 @@
 				var $this = $(this);
 				$this.find('.swiper-wrapper > *').wrap('<div class="swiper-slide">');
 				new Swiper(this, {
-					loop: true,
-					autoplay: {
-						delay: 2200,
-					  },
-					disableOnInteraction: true,
-					pauseOnMouseEnter: true,
 					speed: 1000,
 					spaceBetween: 30,
 					grabCursor: true,
@@ -736,12 +723,6 @@
 	};
 
 	VLTJS.testimonialSlider.init()
-
-	$('.vlt-testimonial-slider .swiper-container').hover(function() {
-		(this).swiper.autoplay.stop();
-	}, function() {
-		(this).swiper.autoplay.start();
-	});
 
 })(jQuery);
 /***********************************************

@@ -1,3 +1,17 @@
+/* Master Stylesheet
+ * Version: 1.0
+ *
+ * Powered by VLThemes
+ *
+ * 01. Helpers
+ * 02. Base
+ * 03. Layout
+ * 04. Pages
+ * 05. Partials
+ * 06. Vendors
+ * 07. Widgets
+ */
+/* 01. Helpers */
 :root
 {
     --p1: #c3323a;
@@ -1069,14 +1083,8 @@ select:focus::-webkit-input-placeholder
     display: block;
 
     max-width: none; 
-    max-height: 60px;
+    max-height: 24px;
 }
-
-h1.vlt-large-heading.has-white-color.slogam {
-    font-size: 60px;
-    line-height: 60px;
-}
-
 .is-light .vlt-navbar .vlt-navbar-logo img.black
 {
     display: none;

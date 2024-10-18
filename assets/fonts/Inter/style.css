@@ -2,7 +2,6 @@
 	font-family: 'Inter';
 	font-weight: normal;
 	font-style: italic;
-	font-display: swap;
 	src: url('Inter-Italic.woff2') format('woff2'), url('Inter-Italic.woff') format('woff');
 }
 
@@ -10,7 +9,6 @@
 	font-family: 'Inter';
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 	src: url('Inter-Regular.woff2') format('woff2'), url('Inter-Regular.woff') format('woff');
 }
 
@@ -18,7 +16,6 @@
 	font-family: 'Inter';
 	font-weight: 500;
 	font-style: normal;
-	font-display: swap;
 	src: url('Inter-Medium.woff2') format('woff2'), url('Inter-Medium.woff') format('woff');
 }
 
@@ -26,7 +23,6 @@
 	font-family: 'Inter';
 	font-weight: 600;
 	font-style: normal;
-	font-display: swap;
 	src: url('Inter-SemiBold.woff2') format('woff2'), url('Inter-SemiBold.woff') format('woff');
 }
 
@@ -34,6 +30,5 @@
 	font-family: 'Inter';
 	font-weight: 700;
 	font-style: normal;
-	font-display: swap;
 	src: url('Inter-Bold.woff2') format('woff2'), url('Inter-Bold.woff') format('woff');
 }
