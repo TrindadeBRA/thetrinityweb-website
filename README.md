@@ -43,18 +43,6 @@ A Trinity Web é uma agência especializada em desenvolvimento web, otimização
 - Integração com Google Analytics
 - Integração com redes sociais
 
-## 📦 Estrutura do Projeto
-
-thetrinityweb/
-├── assets/
-│ ├── css/
-│ ├── fonts/
-│ ├── img/
-│ ├── scripts/
-│ └── vendors/
-├── index.html
-└── README.md
-
 ## 📄 Licença
 
 Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes
